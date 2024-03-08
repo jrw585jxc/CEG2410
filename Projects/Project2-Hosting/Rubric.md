@@ -5,13 +5,15 @@
 ## Part 1 - HTTP Server ( / 6)
 
 - Service Basics
-    - Service name & installation
-    - Default port & site directory
+    - Apache2
+    - Default port: 80
+    - Site directory: /var/www/html/
 - Site administration
     - Configuration files, including what they configure, their location and any notes about why location matters
-        - service configuration
-        - site configuration
-    - Configuration of permissions for website files
+        - /etc/apache2/apache2.conf/; Main settings and options for apache service.
+        - /etc/apache2/sites-available/: Settings for sites hosted by apache.
+        - /etc/apache2/mods-available/; Settings for modules for hosted sites.
+    - Configuration of permissions for website files: sudo chmod -R 755 /var/www/html/
     - **Screenshot** of folder & file permissions
 
 ## Part 2 - Enabling HTTPS ( / 5)
